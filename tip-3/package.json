@@ -1,0 +1,23 @@
+{
+  "name": "tip-3-contracts",
+  "version": "1.0.0",
+  "description": "Everscale broxus TIP-3 implementation example",
+  "scripts": {
+    "build": "locklift build --config ./locklift.config.js -fs tsol",
+    "deploy": "locklift run --config locklift.config.js -n local --script scripts/1-deploy.js",
+    "test": "locklift test --config ./locklift.config.js -n local",
+    "gendoc": "locklift gendoc --config ./locklift.config.js -fs tsol"
+  },
+  "author": "Pertinax wallet team <support@pertinaxwallet.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@tonclient/core": "^1.30.0",
+    "@tonclient/lib-node": "^1.30.0",
+    "chai": "^4.2.0",
+    "directory-tree": "^2.2.5",
+    "everdev": "^1.0.0",
+    "mocha": "^8.2.1",
+    "mocha-logger": "^1.0.7",
+    "underscore": "^1.12.0"
+  }
+}
